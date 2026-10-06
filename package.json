@@ -1,0 +1,40 @@
+{
+  "name": "ERINE-AI",
+  "version": "1.0.0",
+  "description": "WhatsApp Multi-Device bot built with Baileys, Project By Lynx decode with Inf project - team..",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --import ./lib/patch-baileys.mjs index.js",
+    "dev": "node --watch --import ./lib/patch-baileys.mjs index.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.0",
+    "@whiskeysockets/baileys": "npm:@itsliaaa/baileys@0.3.18-final",
+    "@audio/decode": "latest",
+    "archiver": "^7.0.1",
+    "async-mutex": "^0.5.0",
+    "awesome-phonenumber": "^5.10.0",
+    "axios": "^1.20.0",
+    "better-sqlite3": "^11.10.0",
+    "cfonts": "^3.2.0",
+    "chalk": "^5.3.0",
+    "file-type": "^19.0.0",
+    "form-data": "^4.0.0",
+    "got": "^13.0.0",
+    "jimp": "^1.6.1",
+    "lodash": "^4.17.21",
+    "lowdb": "^3.0.0",
+    "moment-timezone": "^0.5.43",
+    "mongoose": "^7.4.4",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "node-webpmux": "latest",
+    "p-limit": "^5.0.0",
+    "pino": "^8.15.0",
+    "syntax-error": "^1.4.0",
+    "ws": "^8.21.3",
+    "yargs": "^17.7.3"
+  }
+}
