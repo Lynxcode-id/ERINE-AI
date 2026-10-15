@@ -24,7 +24,7 @@ Dibangun dengan JavaScript dan Zapo-JS.
 
 **ERINE-AI • ELYRA** adalah script bot WhatsApp berbasis [Zapo-JS](https://github.com/vinikjkkj/zapo) untuk automasi pesan, pengembangan fitur berbasis plugin, dan integrasi layanan eksternal.
 
-ELYRA bukan lagi sekadar base bot. Script ini memiliki sistem dan struktur pengembangan sendiri, dan masih terus diperbarui oleh **Lynx decode — Arman Maulaba** sebagai developer tunggal saat ini. Pengembangan dilakukan secara bertahap berdasarkan kebutuhan, evaluasi, serta waktu dan sumber daya yang tersedia.
+ELYRA bukan lagi sekadar base bot. Script ini memiliki sistem dan struktur pengembangan sendiri, dan masih terus diperbarui oleh **Lynx decode — Arman Maulana** sebagai developer tunggal saat ini. Pengembangan dilakukan secara bertahap berdasarkan kebutuhan, evaluasi, serta waktu dan sumber daya yang tersedia.
 
 > **Status project:** aktif dikembangkan. Fitur, konfigurasi, dependensi, dan struktur internal dapat berubah pada pembaruan berikutnya.
 
@@ -33,7 +33,7 @@ ELYRA bukan lagi sekadar base bot. Script ini memiliki sistem dan struktur penge
 | Detail | Informasi |
 | --- | --- |
 | Nama | ERINE-AI • ELYRA |
-| Developer | Lynx decode — Arman Maulaba |
+| Developer | Lynx decode — Arman Maulana |
 | Tim dan komunitas | INF PROJECT TEAM |
 | Ekosistem | INF PROJECT'S & GENERAL DISTRICT |
 | Bahasa | JavaScript (ES Modules) |
