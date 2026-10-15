@@ -38,6 +38,7 @@ ELYRA bukan lagi sekadar base bot. Script ini memiliki sistem dan struktur penge
 | Ekosistem | INF PROJECT'S & GENERAL DISTRICT |
 | Bahasa | JavaScript (ES Modules) |
 | Runtime | Node.js |
+| Base Script by | bangsul |
 | Library WhatsApp | Zapo-JS |
 | Repository | [Lynxcode-id/ERINE-AI](https://github.com/Lynxcode-id/ERINE-AI) |
 
@@ -332,6 +333,7 @@ Kapasitas serta ketersediaan layanan dapat berubah sesuai kondisi operasional.
 **Teknologi dan dependensi**
 
 - [Zapo-JS](https://github.com/vinikjkkj/zapo)
+- [Base-Original](https://github.com/BangsulBotz/zapo-js)
 - [@zapo-js/media-utils](https://www.npmjs.com/package/@zapo-js/media-utils)
 - [@zapo-js/store-sqlite](https://www.npmjs.com/package/@zapo-js/store-sqlite)
 - [better-sqlite3](https://www.npmjs.com/package/better-sqlite3)
