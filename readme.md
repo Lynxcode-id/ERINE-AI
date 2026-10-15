@@ -279,7 +279,7 @@ Penghentian pengembangan tidak menghapus pengalaman dan kontribusi yang telah me
 - **GC Erine:** [Grup WhatsApp](https://chat.whatsapp.com/JlUNKqeRT8tAK4Nnqxxc51?s=cl&p=a&mlu=4&ilr=4)
 - **GC Shiya:** [Grup WhatsApp](https://chat.whatsapp.com/CAT03E3YJNJ1RaLsUo1X80)
 
-**Informasi grup:** Grup chat ERINE AI saat ini ditutup dan tidak menerima permintaan masuk secara terbuka. Grup Li Shiya ESM menjadi ruang diskusi publik yang tersedia melalui tautan di atas. Status akses grup dapat berubah.
+**Informasi grup:** Grup chat ERINE AI saat ini ditutup dan tidak menerima permintaan masuk secara terbuka. Grup Li Shiya ESM menjadi ruang diskusi publik yang tersedia melalui tautan di atas. Status akses tersebut dapat berubah sewaktu waktu.
 
 **Etika komunitas**
 
