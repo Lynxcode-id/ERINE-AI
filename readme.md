@@ -1,20 +1,20 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,55:164e63,100:22d3ee&height=190&section=header&text=ERINE-AI%20%E2%80%A2%20ELYRA&fontSize=36&fontColor=ffffff&fontAlignY=36&desc=WhatsApp%20Automation%20System&descSize=16&descAlignY=57&animation=fadeIn" width="100%" alt="ERINE-AI ELYRA" />
+<img src="https://raw.githubusercontent.com/Lynxcode-id/picture/main/1792366518548.jpeg" width="100%" alt="ELYRA — ERINE-AI WhatsApp Automation" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=3200&pause=900&color=22D3EE&center=true&vCenter=true&repeat=true&width=520&height=32&lines=Automation+%E2%80%A2+Plugin+System;Built+to+Grow;Powered+by+INF+PROJECT" alt="Project tagline" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1220,50:164e63,100:22d3ee&height=170&section=header&text=ELYRA&fontSize=54&fontColor=ffffff&fontAlignY=40&desc=ERINE-AI%20%7C%20WhatsApp%20Automation%20System&descSize=16&descAlignY=64&animation=fadeIn" width="100%" alt="ELYRA header" />
 
-**Script bot WhatsApp yang terus dikembangkan.**  
-Dibangun dengan JavaScript dan Zapo-JS.
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2800&pause=800&color=22D3EE&center=true&vCenter=true&repeat=true&width=650&height=35&lines=WhatsApp+Automation;Modular+Plugin+System;Built+to+Grow;Powered+by+INF+PROJECT" alt="ELYRA animated tagline" />
 
-[Repository](https://github.com/Lynxcode-id/ERINE-AI) · [INF PROJECT](https://whatsapp.com/channel/0029VbCUDdOHFxOyVb2Hfe2X) · [Portfolio](https://www.lynxdev.my.id/) · [Dukung Project](https://saweria.co/LynxPreset)
+**Sistem automasi WhatsApp yang terus tumbuh dan dikembangkan.**  
+JavaScript · Zapo-JS · Plugin System · Continuous Development
 
-<br />
+[Repository](https://github.com/Lynxcode-id/ERINE-AI) · [INF PROJECT](https://whatsapp.com/channel/0029VbCUDdOHFxOyVb2Hfe2X) · [Portfolio](https://www.lynxdev.my.id/) · [Dukung Pengembangan](https://saweria.co/LynxPreset)
 
-[![Development](https://img.shields.io/badge/status-active%20development-16a34a?style=flat-square)](https://github.com/Lynxcode-id/ERINE-AI)
-[![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ESM-f7df1e?style=flat-square&logo=javascript&logoColor=111827)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Zapo-JS](https://img.shields.io/badge/WhatsApp-Zapo--JS-22c55e?style=flat-square)](https://github.com/vinikjkkj/zapo)
+[![Status](https://img.shields.io/badge/status-active%20development-16a34a?style=for-the-badge)](https://github.com/Lynxcode-id/ERINE-AI)
+[![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES%20Modules-f7df1e?style=for-the-badge&logo=javascript&logoColor=111827)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Zapo-JS](https://img.shields.io/badge/Library-Zapo--JS-0891b2?style=for-the-badge)](https://github.com/vinikjkkj/zapo)
 
 </div>
 
@@ -22,85 +22,70 @@ Dibangun dengan JavaScript dan Zapo-JS.
 
 ## Tentang ELYRA
 
-**ERINE-AI • ELYRA** adalah script bot WhatsApp berbasis [Zapo-JS](https://github.com/vinikjkkj/zapo) untuk automasi pesan, pengembangan fitur berbasis plugin, dan integrasi layanan eksternal.
+**ERINE-AI • ELYRA** adalah script bot WhatsApp berbasis [Zapo-JS](https://github.com/vinikjkkj/zapo) untuk automasi pesan, pengelolaan fitur berbasis plugin, dan integrasi layanan eksternal.
 
-ELYRA bukan lagi sekadar base bot. Script ini memiliki sistem dan struktur pengembangan sendiri, dan masih terus diperbarui oleh **Lynx decode — Arman Maulana** sebagai developer tunggal saat ini. Pengembangan dilakukan secara bertahap berdasarkan kebutuhan, evaluasi, serta waktu dan sumber daya yang tersedia.
+ELYRA bukan lagi sekadar base bot. Project ini terus dibangun sebagai script dengan struktur, sistem, dan arah pengembangan sendiri. Pengembangan utama saat ini dikerjakan secara mandiri oleh **Lynx decode — Arman Maulana**, sebagai bagian dari ekosistem **INF PROJECT TEAM**, **INF PROJECT'S**, dan **GENERAL DISTRICT**.
 
-> **Status project:** aktif dikembangkan. Fitur, konfigurasi, dependensi, dan struktur internal dapat berubah pada pembaruan berikutnya.
+Fokusnya bukan sekadar menambah banyak command, tetapi menjaga struktur tetap dapat dipelihara, memperbaiki masalah yang ditemukan, dan mengembangkan fitur sesuai kebutuhan serta sumber daya yang tersedia.
 
-### Informasi Project
+> **Status:** Active Development. Fitur, konfigurasi, dependensi, dan struktur internal dapat berubah sewaktu-waktu.
+
+## Ringkasan Project
 
 | Detail | Informasi |
 | --- | --- |
 | Nama | ERINE-AI • ELYRA |
+| Repository | [Lynxcode-id/ERINE-AI](https://github.com/Lynxcode-id/ERINE-AI) |
 | Developer | Lynx decode — Arman Maulana |
 | Tim dan komunitas | INF PROJECT TEAM |
 | Ekosistem | INF PROJECT'S & GENERAL DISTRICT |
-| Bahasa | JavaScript (ES Modules) |
+| Bahasa | JavaScript · ES Modules |
 | Runtime | Node.js |
 | Library WhatsApp | Zapo-JS |
-| Repository | [Lynxcode-id/ERINE-AI](https://github.com/Lynxcode-id/ERINE-AI) |
+| Status | Active Development |
 
 ## Kelebihan Utama
 
-- **Plugin modular.** Fitur dipisah ke dalam plugin agar lebih mudah ditambah, diperbaiki, dan dirawat.
-- **Reload plugin.** Mendukung pemuatan ulang plugin tanpa selalu mengharuskan restart penuh.
-- **Penggunaan resource yang terukur.** Struktur dibuat untuk mengurangi pekerjaan berulang yang tidak diperlukan. Pemakaian aktual tetap bergantung pada fitur aktif dan beban server.
-- **Penyimpanan SQLite.** Digunakan untuk sesi dan kebutuhan data tertentu tanpa memerlukan server database terpisah untuk penggunaan lokal yang sesuai.
-- **Penanganan error plugin.** Membantu membatasi dampak kesalahan pada satu plugin, meskipun tidak semua jenis error dapat dicegah.
-- **Dukungan pesan dan media.** Dapat menggunakan kemampuan kirim pesan, reaction, media, voice note, thumbnail, dan fitur lain sesuai implementasi wrapper.
-- **Mudah diperluas.** Struktur handler, database, helper, dan plugin memberi ruang untuk integrasi serta pengembangan fitur berikutnya.
-- **Pengembangan berkelanjutan.** Fokus pengembangan mencakup perbaikan bug, pemeliharaan, stabilitas, dan penambahan fitur secara bertahap.
+- **Plugin modular** — fitur dikelompokkan agar lebih mudah ditambah, diperbaiki, dan dipelihara.
+- **Pengelolaan plugin** — mendukung alur pemuatan dan reload plugin sesuai implementasi loader.
+- **Penyimpanan SQLite** — digunakan untuk sesi atau data tertentu tanpa server database terpisah pada penggunaan lokal yang sesuai.
+- **Penanganan error** — membantu mengisolasi sebagian kegagalan plugin agar lebih mudah ditelusuri.
+- **Dukungan pesan dan media** — kemampuan pesan, reaction, media, voice note, thumbnail, dan fitur lain mengikuti API wrapper.
+- **Struktur yang dapat dikembangkan** — handler, helper, database, konfigurasi, dan plugin dipisahkan sesuai peran.
+- **Integrasi layanan eksternal** — tersedia ruang pengembangan untuk API dan layanan yang dibutuhkan fitur bot.
+- **Efisiensi yang diperhatikan** — alur kerja dirancang untuk menghindari proses berulang yang tidak diperlukan; penggunaan aktual bergantung pada fitur, trafik, dan server.
+- **Pemeliharaan berkelanjutan** — perbaikan bug, penyesuaian dependensi, stabilitas, dan fitur baru dilakukan bertahap.
 
-> Poin di atas menjelaskan desain dan kemampuan sistem yang digunakan. Performa serta ketersediaan setiap fitur tidak dijamin sama pada semua perangkat, versi library, dan konfigurasi.
+> Performa dan ketersediaan fitur bergantung pada versi library, sistem operasi, konfigurasi, dan beban server. Daftar ini menjelaskan arah desain, bukan jaminan bahwa semua kondisi selalu bebas gangguan.
 
 ## Navigasi Dokumentasi
 
-Bagian teknis dan informasi tambahan di bawah dapat dibuka sesuai kebutuhan.
+Pilih bagian yang ingin dibaca. Panel dapat dibuka dan ditutup agar README tetap ringkas di GitHub.
 
 <details>
-<summary><strong>1. Instalasi dan menjalankan bot</strong></summary>
+<summary><strong>01 · Instalasi dan menjalankan bot</strong></summary>
 
-### Persyaratan
-
-- Node.js 20 atau lebih baru, dengan tetap memperhatikan kompatibilitas dependensi.
-- npm.
-- FFmpeg dan FFprobe untuk fitur media yang memerlukannya.
-- Koneksi internet dan terminal untuk proses autentikasi.
-
-### Clone repository
+**Persyaratan:** Node.js 20 atau versi yang kompatibel dengan dependensi, npm, koneksi internet, serta FFmpeg dan FFprobe untuk fitur media yang memerlukannya.
 
 ```bash
 git clone https://github.com/Lynxcode-id/ERINE-AI.git
 cd ERINE-AI
-```
-
-### Pasang dependensi
-
-```bash
 npm install
-```
-
-Jika `package.json` mengatur script `postinstall` untuk menjalankan `patch.js`, proses tersebut akan mengikuti konfigurasi package.
-
-### Jalankan bot
-
-```bash
 npm start
 ```
 
-Ikuti instruksi autentikasi yang muncul di terminal. Entry point dan proses start mengikuti konfigurasi `package.json` pada versi repository yang digunakan.
+Jika `package.json` mengatur `postinstall` untuk menjalankan `patch.js`, patch berjalan sesuai konfigurasi package. Ikuti instruksi autentikasi yang muncul di terminal. Entry point dan perintah start mengikuti `package.json` versi repository yang digunakan.
 
 </details>
 
 <details>
-<summary><strong>2. Konfigurasi dan keamanan</strong></summary>
+<summary><strong>02 · Konfigurasi dan keamanan</strong></summary>
 
-Periksa file konfigurasi yang tersedia di repository, termasuk `settings.js` jika digunakan oleh versi tersebut. Atur nomor owner, prefix, pengaturan bot, API key, dan endpoint sesuai format yang didukung oleh script.
+Periksa file konfigurasi yang disediakan versi project, termasuk `settings.js` apabila digunakan. Atur nomor owner, prefix, pengaturan bot, API key, dan endpoint berdasarkan format yang didukung script.
 
-Jangan mengunggah file sesi, token, API key privat, atau database yang berisi data sensitif ke repository publik.
+Jangan mengunggah kredensial, sesi, token, API key privat, file `.env`, atau database yang berisi data sensitif.
 
-Contoh aturan `.gitignore` yang dapat disesuaikan:
+Contoh `.gitignore` yang dapat disesuaikan:
 
 ```gitignore
 node_modules/
@@ -114,14 +99,14 @@ auth/
 npm-debug.log*
 ```
 
-Sesuaikan daftar tersebut dengan kebutuhan project. Jangan mengecualikan file yang memang diperlukan sebagai source code atau data contoh publik.
+Sesuaikan aturan dengan kebutuhan project. Jangan mengecualikan source code atau data contoh yang memang diperlukan.
 
 </details>
 
 <details>
-<summary><strong>3. Sistem plugin</strong></summary>
+<summary><strong>03 · Sistem plugin</strong></summary>
 
-ELYRA menggunakan sistem plugin untuk memisahkan fitur dari sistem utama. Jika loader pada versi yang digunakan menerima format berikut, contoh plugin sederhana:
+Jika loader versi yang digunakan menerima format berikut, contoh plugin sederhana:
 
 ```js
 export default {
@@ -136,7 +121,7 @@ export default {
 }
 ```
 
-Contoh susunan folder plugin:
+Contoh susunan plugin:
 
 ```text
 plugins/
@@ -148,130 +133,97 @@ plugins/
 └── tools/
 ```
 
-Ketentuan dasar:
-
-- Ikuti format ekspor yang digunakan loader.
-- Pastikan plugin memiliki `command` dan fungsi `execute` jika diwajibkan.
-- Gunakan context serta API yang tersedia pada versi wrapper.
-- Tangani error pada operasi yang berpotensi gagal.
-- Hindari pekerjaan berat yang tidak diperlukan pada setiap pesan masuk.
-- Jangan menaruh kredensial sensitif langsung di dalam plugin.
-
-Struktur folder dan format plugin dapat berubah dalam pembaruan berikutnya.
+Ikuti format ekspor dan context yang dikenali loader. Pastikan properti wajib tersedia, tangani error, hindari pekerjaan berat yang tidak diperlukan pada setiap pesan, dan jangan menaruh kredensial privat di source code. Struktur folder dapat berubah selama pengembangan.
 
 </details>
 
 <details>
-<summary><strong>4. Contoh API dasar</strong></summary>
+<summary><strong>04 · Contoh API dasar</strong></summary>
 
 **Reply pesan**
-
 ```js
 await m.reply('Halo dunia!')
 ```
 
 **Mengirim pesan**
-
 ```js
 await sock.message.send(m.chat, 'Halo dunia!')
 ```
 
 **Mengirim reaction**
-
 ```js
 await sock.sendReact(m.chat, '👍', m.id)
 ```
 
-Contoh mengikuti pola API yang digunakan dalam script. Jika implementasi Zapo-JS atau wrapper berubah, periksa kembali API yang tersedia pada versi terpasang.
+Contoh mengikuti pola API yang digunakan dalam script. Periksa [dokumentasi Zapo-JS](https://zapo.to) dan wrapper versi terpasang apabila API berubah.
 
 </details>
 
 <details>
-<summary><strong>5. Source code dan obfuscation</strong></summary>
+<summary><strong>05 · Source code dan obfuscation</strong></summary>
 
-Sebagian source code ERINE-AI • ELYRA di-obfuscate, sedangkan sebagian lainnya tetap dapat dibaca. Keputusan ini merupakan bagian dari pengelolaan project yang saat ini dikembangkan oleh satu developer.
+Sebagian source code ELYRA di-obfuscate, sedangkan sebagian lainnya tetap dapat dibaca. Keputusan ini merupakan bagian dari pengelolaan project yang saat ini dikembangkan oleh satu developer utama.
 
-Obfuscation digunakan untuk mempersulit pembacaan langsung pada bagian implementasi tertentu. Obfuscation bukan jaminan bahwa kode tidak dapat dianalisis dan tidak menggantikan praktik keamanan yang baik.
-
-Harap menghormati proses pengembangan dan hak atas kode yang terdapat dalam project. Perubahan pada tingkat obfuscation maupun struktur internal dapat dilakukan sesuai kebutuhan pemeliharaan.
+Obfuscation bertujuan mempersulit pembacaan langsung pada bagian tertentu. Teknik ini bukan jaminan bahwa kode tidak dapat dianalisis dan bukan pengganti pengamanan kredensial atau praktik keamanan yang benar. Tingkat obfuscation dan struktur internal dapat berubah sesuai kebutuhan pemeliharaan.
 
 </details>
 
 <details>
-<summary><strong>6. API key dan dukungan project</strong></summary>
+<summary><strong>06 · API key dan dukungan project</strong></summary>
 
-ELYRA dapat menggunakan API atau layanan eksternal untuk mendukung fitur tertentu. Ketersediaannya bergantung pada konfigurasi, kuota, status penyedia, dan kebijakan masing-masing layanan.
+ELYRA dapat menggunakan API atau layanan eksternal. Ketersediaannya dipengaruhi konfigurasi, kuota, status penyedia, endpoint, dan kebijakan layanan terkait.
 
-Kami berupaya menjaga integrasi API agar tetap berfungsi selama memungkinkan. Namun, layanan pihak ketiga dapat mengalami perubahan, gangguan, pembatasan, atau penghentian yang berada di luar kendali pengembang.
-
-Jika ingin membantu biaya operasional API dan keberlanjutan pengembangan, dukungan dapat diberikan melalui Saweria:
+Kami berupaya menjaga integrasi tetap berfungsi selama memungkinkan. Dukungan biaya operasional membantu pemeliharaan dan pengembangan.
 
 <div align="center">
 
-[![Dukung ELYRA melalui Saweria](https://img.shields.io/badge/Dukung_Project-Saweria-FFB000?style=for-the-badge)](https://saweria.co/LynxPreset)
+[![Dukung Pengembangan ELYRA](https://img.shields.io/badge/SUPPORT%20ELYRA-Saweria-FFB000?style=for-the-badge)](https://saweria.co/LynxPreset)
 
 **[saweria.co/LynxPreset](https://saweria.co/LynxPreset)**
 
 </div>
 
-Donasi bersifat sukarela dan tidak menjamin API key akan aktif selamanya, kuota tidak akan habis, atau seluruh fitur selalu tersedia tanpa gangguan.
+Donasi bersifat sukarela dan tidak menjamin API key aktif selamanya, kuota tidak akan habis, atau layanan pihak ketiga selalu tersedia. Jangan bagikan API key privat melalui issue, grup publik, atau tangkapan layar.
 
 </details>
 
 <details>
-<summary><strong>7. Troubleshooting</strong></summary>
+<summary><strong>07 · Troubleshooting</strong></summary>
 
-**Plugin tidak terbaca**
-
-Periksa lokasi file, ekstensi, sintaks JavaScript, format ekspor, serta properti yang diwajibkan loader. Lihat log terminal untuk mengetahui penyebab kegagalan saat plugin dimuat.
-
-**Bot meminta autentikasi ulang**
-
-Pastikan folder sesi tidak terhapus dan proses bot memiliki izin baca/tulis yang diperlukan. Periksa log koneksi untuk mengetahui apakah sesi tidak valid atau autentikasi gagal.
-
-**FFmpeg tidak ditemukan**
-
-```bash
-ffmpeg -version
-ffprobe -version
-```
-
-Pastikan keduanya tersedia melalui `PATH` jika diperlukan oleh fitur yang digunakan.
-
-**API gagal digunakan**
-
-Periksa API key, endpoint, koneksi internet, parameter request, kuota, dan status penyedia API. Jangan menyertakan API key privat ketika melaporkan masalah.
-
-**Bot berhenti atau mengalami error**
-
-Periksa log terminal, versi Node.js, dependensi, konfigurasi, dan plugin yang terakhir digunakan. Hapus informasi sensitif sebelum mengirim laporan error.
+- **Plugin tidak terbaca:** periksa lokasi file, ekstensi `.js`, sintaks, format ekspor, dan properti yang diwajibkan loader.
+- **Autentikasi berulang:** pastikan sesi tidak terhapus dan proses memiliki izin baca/tulis; periksa log koneksi.
+- **FFmpeg tidak ditemukan:** jalankan `ffmpeg -version` dan `ffprobe -version`, lalu pastikan tersedia melalui `PATH`.
+- **API gagal:** periksa key, endpoint, parameter, koneksi, kuota, dan status penyedia. Hapus informasi sensitif dari log.
+- **Bot berhenti:** periksa log terminal, Node.js, dependensi, konfigurasi, dan plugin terakhir. Buat cadangan sebelum menghapus sesi atau database.
 
 </details>
 
 <details>
-<summary><strong>8. Project sebelumnya</strong></summary>
+<summary><strong>08 · Project sebelumnya</strong></summary>
 
-Project berikut telah berhenti dikembangkan. Terima kasih kepada semua pengguna yang telah menjadi bagian dari perjalanannya.
+Project berikut telah berhenti dikembangkan. Terima kasih kepada semua pengguna yang menjadi bagian dari perjalanannya.
 
 - **ERINE-MD:** [github.com/Lynxcode-id/ERINE-MD](https://github.com/Lynxcode-id/ERINE-MD)
 - **Li-Shiya MD:** [github.com/Lynxcode-id/Li-Shiya-MD](https://github.com/Lynxcode-id/Li-Shiya-MD)
 
-Penghentian pengembangan tidak menghapus pengalaman dan kontribusi yang telah menjadi bagian dari perjalanan project tersebut.
+Penghentian pengembangan tidak menghapus pengalaman dan kontribusi yang telah menjadi bagian dari perjalanan project.
 
 </details>
 
 <details>
-<summary><strong>9. Ecosystem Lynx</strong></summary>
+<summary><strong>09 · Ekosistem Lynx</strong></summary>
 
-- **Portfolio:** [www.lynxdev.my.id](https://www.lynxdev.my.id/)
-- **Lynx Snippets:** [lynxsnippets.web.id](https://lynxsnippets.web.id)
-- **Lynx Snippets V2:** [lynxsnippets2.web.id](https://lynxsnippets2.web.id)
-- **Lynx REST API:** [lynxapis.my.id](https://lynxapis.my.id)
+| Layanan | Tautan |
+| --- | --- |
+| Portfolio | [lynxdev.my.id](https://www.lynxdev.my.id/) |
+| Lynx Snippets | [lynxsnippets.web.id](https://lynxsnippets.web.id) |
+| Lynx Snippets V2 | [lynxsnippets2.web.id](https://lynxsnippets2.web.id) |
+| Lynx REST API | [lynxapis.my.id](https://lynxapis.my.id) |
 
 </details>
 
 <details>
-<summary><strong>10. Channel dan komunitas</strong></summary>
+<summary><strong>10 · Channel dan komunitas</strong></summary>
 
 - **API's:** [Channel WhatsApp](https://whatsapp.com/channel/0029VbCMzVqE50UZAnV44u05)
 - **INF Code:** [Channel WhatsApp](https://whatsapp.com/channel/0029VbCUDdOHFxOyVb2Hfe2X)
@@ -279,58 +231,45 @@ Penghentian pengembangan tidak menghapus pengalaman dan kontribusi yang telah me
 - **GC Erine:** [Grup WhatsApp](https://chat.whatsapp.com/JlUNKqeRT8tAK4Nnqxxc51?s=cl&p=a&mlu=4&ilr=4)
 - **GC Shiya:** [Grup WhatsApp](https://chat.whatsapp.com/CAT03E3YJNJ1RaLsUo1X80)
 
-**Informasi grup:** Grup chat ERINE AI saat ini ditutup dan tidak menerima permintaan masuk secara terbuka. Grup Li Shiya ESM menjadi ruang diskusi publik yang tersedia melalui tautan di atas. Status akses tersebut dapat berubah sewaktu waktu.
-
-**Etika komunitas**
-
-- Admin mungkin membutuhkan waktu untuk membalas pesan.
-- Jangan melakukan spam chat atau panggilan berulang. Aktivitas spam dapat memicu pemblokiran otomatis.
-- Biasakan mengucapkan salam saat memulai percakapan.
-- Hormati anggota lain dan jangan membagikan kredensial atau informasi pribadi di ruang publik.
+**Informasi grup:** Grup chat ERINE AI saat ini ditutup dan tidak menerima permintaan masuk secara terbuka. Grup Li Shiya ESM merupakan ruang diskusi publik yang tersedia melalui tautan di atas. Status akses dapat berubah.
 
 </details>
 
 <details>
-<summary><strong>11. Kontak, sosial media, dan dukungan</strong></summary>
+<summary><strong>11 · Kontak, sosial media, dan dukungan</strong></summary>
 
 **Kontak**
-
-- Bisnis: [WhatsApp Business](https://wa.me/6285143688664)
-- Support: [WhatsApp Support](https://wa.me/6281362133135)
-- Bot Telegram: [Lynx CPanel Bot](https://t.me/Lynxcpanel_bot)
-- Telegram: `@Lynxmanuelz4`
+- Bisnis — [WhatsApp](https://wa.me/6285143688664)
+- Support — [WhatsApp](https://wa.me/6281362133135)
+- Bot Telegram — [Lynx CPanel Bot](https://t.me/Lynxcpanel_bot)
+- Telegram — `@Lynxmanuelz4`
 
 **Sosial media**
-
-- Instagram: `@lynxdecode_`
-- YouTube: `@lynxdecode_`
-- TikTok: `@olineonlyy_`
+- Instagram — `@lynxdecode_`
+- YouTube — `@lynxdecode_`
+- TikTok — `@olineonlyy_`
 
 **Dukungan**
-
-- Saweria: [saweria.co/LynxPreset](https://saweria.co/LynxPreset)
-- NGL: [ngl.link/lynxdsinii](https://ngl.link/lynxdsinii)
+- Saweria — [saweria.co/LynxPreset](https://saweria.co/LynxPreset)
+- NGL — [ngl.link/lynxdsinii](https://ngl.link/lynxdsinii)
 
 </details>
 
 <details>
-<summary><strong>12. Jadibot gratis</strong></summary>
+<summary><strong>12 · Jadibot gratis</strong></summary>
 
-Layanan jadibot dapat digunakan secara gratis sesuai ketersediaan dan ketentuan yang berlaku.
-
-1. Bergabung dengan grup komunitas yang menerima pengguna baru.
-2. Ikuti aturan dan petunjuk komunitas.
+1. Bergabung dengan grup komunitas yang menerima anggota baru.
+2. Baca dan ikuti aturan komunitas.
 3. Ketik `.jadibot` jika fitur tersedia pada grup terkait.
 
-Kapasitas serta ketersediaan layanan dapat berubah sesuai kondisi operasional.
+Layanan mengikuti kapasitas dan ketentuan komunitas. Jangan gunakan untuk spam atau aktivitas yang melanggar aturan platform.
 
 </details>
 
 <details>
-<summary><strong>13. Credits dan disclaimer</strong></summary>
+<summary><strong>13 · Credits dan disclaimer</strong></summary>
 
 **Teknologi dan dependensi**
-
 - [Zapo-JS](https://github.com/vinikjkkj/zapo)
 - [@zapo-js/media-utils](https://www.npmjs.com/package/@zapo-js/media-utils)
 - [@zapo-js/store-sqlite](https://www.npmjs.com/package/@zapo-js/store-sqlite)
@@ -338,27 +277,37 @@ Kapasitas serta ketersediaan layanan dapat berubah sesuai kondisi operasional.
 - [sharp](https://www.npmjs.com/package/sharp)
 - FFmpeg dan FFprobe
 
-Terima kasih kepada pengguna, penguji, dan komunitas yang memberikan masukan selama pengembangan. Lisensi masing-masing dependensi tetap mengikuti pemiliknya.
+Terima kasih kepada pengguna, penguji, dan komunitas yang memberi masukan. Lisensi tiap dependensi tetap mengikuti ketentuan pemiliknya.
 
-**Disclaimer**
-
-ERINE-AI • ELYRA adalah project independen untuk kebutuhan automasi dan pengembangan sistem bot. Project ini tidak berafiliasi dengan, tidak disponsori oleh, dan tidak didukung secara resmi oleh WhatsApp.
-
-Zapo-JS merupakan dependensi terpisah. Nama, merek, dan hak atas setiap dependensi tetap menjadi milik pemegang hak masing-masing. Pengguna bertanggung jawab atas konfigurasi, keamanan kredensial, penggunaan API, dan aktivitas yang dijalankan melalui script.
+**Disclaimer:** ERINE-AI • ELYRA adalah project independen untuk automasi dan pengembangan sistem bot. Project ini tidak berafiliasi dengan, disponsori oleh, atau didukung secara resmi oleh WhatsApp. Zapo-JS merupakan dependensi terpisah. Pengguna bertanggung jawab atas konfigurasi, keamanan kredensial, penggunaan API, dan aktivitas yang dijalankan melalui script.
 
 </details>
 
----
+## Arah Pengembangan
+
+ELYRA akan terus dikembangkan secara bertahap. Prioritasnya adalah merawat fondasi yang ada, memperbaiki masalah yang ditemukan, meningkatkan kompatibilitas, dan menambahkan fitur yang memberi manfaat nyata.
+
+Pengembangan oleh satu developer berarti waktu pengerjaan dan jadwal rilis dapat bervariasi. Tidak semua permintaan dapat dikerjakan langsung dan tidak ada jadwal rilis tetap yang dijanjikan. Laporan bug yang jelas, langkah reproduksi, ide fitur yang terarah, dan dukungan komunitas akan sangat membantu.
+
+### Berkontribusi pada project
+
+- Laporkan bug dengan detail yang cukup dan hilangkan informasi sensitif dari log.
+- Sertakan langkah untuk mereproduksi masalah.
+- Ajukan ide fitur beserta tujuan dan contoh penggunaannya.
+- Ikuti pembaruan melalui repository dan channel INF PROJECT.
+- Dukung biaya operasional dan pengembangan jika berkenan.
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22d3ee,55:164e63,100:111827&height=115&section=footer&animation=fadeIn" width="100%" alt="Footer" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=900&color=22D3EE&center=true&vCenter=true&repeat=true&width=600&height=30&lines=Build+Smart+Systems;Automate+with+Purpose;Keep+Learning.+Keep+Building." alt="Development principles" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22d3ee,50:164e63,100:0b1220&height=135&section=footer&animation=fadeIn" width="100%" alt="ELYRA footer" />
 
 **ERINE-AI • ELYRA**  
 Developed by **Lynx decode — Arman Maulana**  
 INF PROJECT TEAM · INF PROJECT'S · GENERAL DISTRICT
 
-[Repository](https://github.com/Lynxcode-id/ERINE-AI) · [INF PROJECT](https://whatsapp.com/channel/0029VbCUDdOHFxOyVb2Hfe2X) · [Support](https://saweria.co/LynxPreset)
+[Repository](https://github.com/Lynxcode-id/ERINE-AI) · [INF PROJECT](https://whatsapp.com/channel/0029VbCUDdOHFxOyVb2Hfe2X) · [Support Project](https://saweria.co/LynxPreset)
 
 *Build Smart System | Automate Everything*
 
