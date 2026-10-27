@@ -1,6 +1,6 @@
 export default {
   command: 'grupclose',
-  alias: [ 'groupclose', 'closegrup', 'closegroup'],
+  alias: [ 'closegc', 'closegrup', 'gcclose'],
   category: 'grup',
   description: 'Tutup grup, cuma admin yang bisa kirim pesan.',
   onlyGroup: true,

@@ -1,62 +1,75 @@
 import { getEffectiveGroupSettings, updateGroupSettings } from '../../lib/groupAndBot.js'
 
 const actions = new Set(['delete', 'kick', 'both'])
+const TYPES = {
+  gc: { key: 'antilink', name: 'Link Grup' },
+  ch: { key: 'antilinkch', name: 'Link Channel' },
+  custom: { key: 'antilinkcustom', name: 'Link Custom' }
+}
+
+const modeOf = c => (c.kick && c.delete ? 'both' : c.kick ? 'kick' : c.delete ? 'delete' : 'off')
 
 export default {
   command: 'antilink',
-  alias: ['antilinkgc', 'antilinkgrup', 'antilinkall'],
+  alias: ['antilinkgc', 'antilinkgrup', 'antilinkall', 'antilinkch'],
   category: 'grup',
-  description: `> Mengatur anti-link grup. Mendeteksi link WhatsApp dan mengeksekusi sesuai opsi.
+  description: `> Anti-link grup. Pilih jenis link: gc (link grup), ch (link channel), custom (daftar link buatanmu lewat .setlink).
 
 *Keterangan Format:*
-\`on\` = mengaktifkan fitur.
-\`off\` = menonaktifkan fitur.
+\`gc | ch | custom\` = jenis (kosong = gc).
+\`on\` / \`off\` = hidupkan / matikan.
 
-*Pilihan sanksi/option:*
-\`delete\` = menghapus pesan pengirim.
-\`kick\` = mengeluarkan user dari grup.
-\`both\` = menghapus & mengeluarkan user.
+*Pilihan sanksi:*
+\`delete\` = hapus pesan.
+\`kick\` = keluarkan user.
+\`both\` = hapus & keluarkan.
 
 contoh penggunaan:
-\`.antilink on delete\`
 \`.antilink on kick\`
-\`.antilink off\`
+\`.antilink gc on delete\`
+\`.antilink ch on both\`
+\`.antilink custom on delete\`
+\`.antilink ch off\`
 
 *Catatan:*
-> tautan undangan grup ini sendiri tidak akan terkena sanksi. (diizinkan)
+> admin grup tidak terkena sanksi.
 > fitur ini hanya bisa digunakan oleh owner.`,
-  help: '<on/off> <delete/kick/both>',
+  help: '[gc|ch|custom] <on/off> <delete/kick/both>',
   onlyOwner: true,
   onlyGroup: true,
 
   async execute(m, { args }) {
-    const value = args[0]?.toLowerCase()
-    const action = args[1]?.toLowerCase()
+    const a = args.map(x => x.toLowerCase())
+    const type = TYPES[a[0]] ? a.shift() : (m.command === 'antilinkch' ? 'ch' : 'gc')
+    const value = a[0]
+    const action = a[1]
+    const { key, name } = TYPES[type]
+    const p = m.prefix
 
-    if (!['true', 'false', 'on', 'off'].includes(value) || args.length > 2) {
-      const settings = getEffectiveGroupSettings(m.chat)
-      const mode = settings.antilink.kick && settings.antilink.delete
-        ? 'both'
-        : settings.antilink.kick ? 'kick' : settings.antilink.delete ? 'delete' : 'off'
-      return m.reply(`Format salah! Gunakan:\n\`${m.prefix}${m.command} <on/off> <option>\`\n\nContoh:\n${m.prefix}${m.command} on kick\n> (tendang anggota yang mengirim link)\n\n${m.prefix}${m.command} on delete\n> (hapus pesan berisi link)\n\n${m.prefix}${m.command} on both\n> (hapus pesan dan tendang anggota)\n\n${m.prefix}${m.command} off\n> (nonaktifkan fitur antilinkall)`)
+    if (!['true', 'false', 'on', 'off'].includes(value) || a.length > 2) {
+      const s = getEffectiveGroupSettings(m.chat)
+      return m.reply([
+        '🌷 *Antilink*',
+        '',
+        `♡ GC : ${modeOf(s.antilink)}`,
+        `♡ CH : ${modeOf(s.antilinkch)}`,
+        `♡ Custom : ${modeOf(s.antilinkcustom)}`,
+        '',
+        `Format: \`${p}antilink <gc|ch|custom> <on/off> <delete/kick/both>\``,
+        `Contoh: ${p}antilink ch on delete`
+      ].join('\n'))
     }
 
     const enabled = value === 'true' || value === 'on'
-    if (enabled && !actions.has(action)) {
-      return m.reply(`Format salah! Gunakan: \`${m.prefix}${m.command} <on/off> <option>\``)
-    }
-    if (!enabled && action) return m.reply(`Saat mematikan anti-link, cukup gunakan: ${m.prefix}${m.command} false`)
+    if (enabled && !actions.has(action)) return m.reply(`Format salah! Gunakan: \`${p}antilink ${type} on <delete/kick/both>\``)
+    if (!enabled && action) return m.reply(`Saat mematikan cukup: ${p}antilink ${type} off`)
 
-    const settings = updateGroupSettings(m.chat, {
-      antilink: {
+    const s = updateGroupSettings(m.chat, {
+      [key]: {
         kick: enabled && (action === 'kick' || action === 'both'),
         delete: enabled && (action === 'delete' || action === 'both')
       }
     })
-    const mode = settings.antilink.kick && settings.antilink.delete
-      ? 'both'
-      : settings.antilink.kick ? 'kick' : 'delete'
-
-    return m.reply(`✅ Antilink ${enabled ? `diaktifkan (${mode})` : 'dinonaktifkan'} untuk grup ini.`)
+    return m.reply(`✅ Antilink ${name} ${enabled ? `diaktifkan (${modeOf(s[key])})` : 'dinonaktifkan'} untuk grup ini.`)
   }
 }

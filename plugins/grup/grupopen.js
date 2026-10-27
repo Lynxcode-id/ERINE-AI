@@ -1,6 +1,6 @@
 export default {
-  command: 'grupopen',
-  alias: ['groupopen', 'opengrup', 'opengroup'],
+  command: 'opengc',
+  alias: ['opengc', 'gcopen'],
   category: 'grup',
   description: 'Buka grup, semua member bisa kirim pesan.',
   onlyGroup: true,
