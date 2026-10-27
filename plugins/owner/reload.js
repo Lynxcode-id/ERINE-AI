@@ -7,20 +7,17 @@ const PLUGINS_DIR = path.resolve(__dirname, '..')
 
 export default {
   command: 'reload',
-  alias: ['rld', 'reloadplugins'],
+  alias: ['reloadplugins'],
   category: 'owner',
-  description: `> Memuat ulang seluruh plugin bot.
-
-contoh penggunaan:
-> \`.reload\``,
+  description: '> Memuat ulang seluruh plugin bot.\n\ncontoh:\n> .reload',
   onlyOwner: true,
+  typing: true,
 
   async execute(m) {
     const start = Date.now()
 
     try {
       const res = await reloadGlobalPlugins(PLUGINS_DIR)
-
       const timeTaken = Date.now() - start
 
       const folderMap = new Map()
@@ -40,36 +37,40 @@ contoh penggunaan:
         if (folderMap.has(dup.b.folder)) folderMap.get(dup.b.folder).hasIssue = true
       }
 
-      let response = `⚡ *RELOAD PLUGINS COMPLETED* (${timeTaken}ms)\n\n`
+      let response = '🌷 *Elyra Reload Plugins*\n' +
+                     '- System plugins have been successfully reloaded.\n\n' +
+                     '♡ - Waktu : ' + timeTaken + 'ms\n' +
+                     '♡ - Total Folder : ' + folderMap.size + '\n\n'
 
       for (const [folder, info] of folderMap) {
         if (!info.hasIssue) {
-          response += `\`${folder}\` -> All plugins ready.\n`
+          response += '♡ ' + folder + ' : Ready (' + info.loaded + ' file)\n'
         } else {
-          response += `\`${folder}\` -> (Loaded: ${info.loaded}) ⚠️ *Issues Found*\n`
+          response += '♡ ' + folder + ' : ⚠️ Issue (' + info.loaded + ' file)\n'
         }
       }
 
       if (res.errorList.length > 0) {
-        response += `\n❌ *ERRORS (${res.errorList.length}):*\n`
+        response += '\n❌ *Errors (' + res.errorList.length + '):*\n'
         for (const err of res.errorList) {
-          response += `• \`${err.folder}/${err.file}\`\n  └─ ${err.reason}\n`
+          response += '• ' + err.folder + '/' + err.file + '\n  └─ ' + err.reason + '\n'
         }
       }
 
       if (res.duplicates.length > 0) {
-        response += `\n⚠️ *DUPLICATES (${res.duplicates.length}):*\n`
+        response += '\n⚠️ *Duplicates (' + res.duplicates.length + '):*\n'
         for (const dup of res.duplicates) {
-          const fileA = `${dup.a.folder}/${dup.a.file}`
-          const fileB = `${dup.b.folder}/${dup.b.file}`
-          const keys = dup.keys.map(k => `\`${k}\``).join(', ')
-          response += `• \`${fileA}\` ⚔️ \`${fileB}\`\n  └─ Keys: ${keys}\n`
+          const fileA = dup.a.folder + '/' + dup.a.file
+          const fileB = dup.b.folder + '/' + dup.b.file
+          const keys = dup.keys.join(', ')
+          response += '• ' + fileA + ' ⚔️ ' + fileB + '\n  └─ Keys: ' + keys + '\n'
         }
       }
 
       return m.reply(response.trim())
     } catch (err) {
-      return m.reply(`❌ *Reload Failed:* ${err?.message || err}`)
+      const errMsg = err?.message || err
+      return m.reply('❌ *Reload Failed:*\n' + errMsg)
     }
   }
 }

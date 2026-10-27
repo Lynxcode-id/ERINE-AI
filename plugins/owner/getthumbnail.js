@@ -1,3 +1,4 @@
+
 export default {
   command: 'getthumbnail',
   alias: ['gt', 'getthumb'],

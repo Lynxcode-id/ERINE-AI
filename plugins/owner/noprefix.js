@@ -1,3 +1,4 @@
+
 import { config, updateConfig } from '../../settings.js'
 
 export default {

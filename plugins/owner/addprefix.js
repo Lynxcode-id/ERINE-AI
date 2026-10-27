@@ -1,3 +1,4 @@
+
 import { config, updateSetting } from '../../settings.js'
 
 const MAX_PREFIX_LENGTH = 5

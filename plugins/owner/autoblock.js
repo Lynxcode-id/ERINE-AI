@@ -1,3 +1,4 @@
+
 import {
   SPEEDS,
   addSkip,
@@ -63,7 +64,6 @@ function buildStatus(m) {
   return lines.join('\n')
 }
 
-// id pengirim perintah (PN + LID) supaya owner tidak ikut diblokir
 function senderIds(m) {
   const key = m.raw?.key || {}
   return [m.sender, key.participant, key.participantAlt, key.remoteJid]

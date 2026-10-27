@@ -1,3 +1,4 @@
+
 import { listThumbs } from '../../db/thumbnails.js'
 
 export default {

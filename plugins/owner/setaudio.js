@@ -4,7 +4,7 @@ export default {
   command: 'setaudiomenu',
   alias: ['setaudio', 'setmenuaudio', 'menuaudio'],
   category: 'owner',
-  description: 'Atur audio VN yang dikirim bareng menu (menu utama, menu all, atau per kategori).',
+  description: 'Atur audio yang dikirim bareng menu (menu utama, menu all, atau per kategori). Audio disimpan apa adanya tanpa kompres.',
   help: '[all|kategori|list] (reply audio)',
   onlyOwner: true,
   wait: true,
@@ -55,8 +55,17 @@ export default {
     }
 
     try {
-      const { converted } = await saveMenuAudio(buffer, key)
-      return m.reply(`Audio ${label} berhasil disetel${converted ? ' (sudah di-convert ke VN)' : ''}.`)
+      const content = m.quoted.full?.audioMessage ?? m.quoted.full?.[m.quoted.type] ?? {}
+      const meta = { mimetype: content.mimetype, ptt: Boolean(content.ptt) }
+
+      const saved = await saveMenuAudio(buffer, key, meta)
+      return m.reply([
+        `Audio ${label} berhasil disetel.`,
+        `› Format : ${saved.mimetype}`,
+        `› Mode : ${saved.ptt ? 'voice note' : 'audio biasa'}`,
+        `› Ukuran : ${(saved.size / 1024).toFixed(1)} KB`,
+        '› Dikirim sesuai aslinya (tanpa kompres).'
+      ].join('\n'))
     } catch (err) {
       console.error('[SETAUDIOMENU] save error:', err?.stack || err?.message || err)
       return m.reply(`Gagal menyimpan audio menu: ${err?.message || 'unknown'}`)

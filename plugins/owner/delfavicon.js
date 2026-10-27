@@ -1,3 +1,4 @@
+
 import { deleteThumb } from '../../db/thumbnails.js'
 
 export default {

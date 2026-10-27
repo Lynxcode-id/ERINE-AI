@@ -1,3 +1,4 @@
+
 export default {
   command: 'leavegc',
   alias: ['leavegroup'],
