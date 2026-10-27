@@ -12,7 +12,7 @@ export default {
     if (!text) return m.reply('Ada yang mau diceritain?\nContoh: `.feelbetter hari ini aku capek banget...`')
 
     try {
-      const { data: res } = await axios.get(`https://lynxapis.my.id/api/ai/feelbetter?prompt=${encodeURIComponent(text)}`)
+      const { data: res } = await axios.get(`${global.lynxapis}/api/ai/feelbetter?prompt=${encodeURIComponent(text)}`)
       
       if (!res.status || !res.data || !res.data.response) {
         return m.reply('Maaf, saat ini AI sedang tidak bisa merespon.')

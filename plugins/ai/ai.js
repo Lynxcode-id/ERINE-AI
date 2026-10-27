@@ -13,7 +13,7 @@ export default {
 
     try {
       const chatId = m.sender.split('@')[0]
-      const { data: res } = await axios.get(`https://lynxapis.my.id/api/ai/unlimited?prompt=${encodeURIComponent(text)}&chat_id=${chatId}`)
+      const { data: res } = await axios.get(`${global.lynxapis}/api/ai/unlimited?prompt=${encodeURIComponent(text)}&chat_id=${chatId}`)
       
       if (!res.status || !res.data || !res.data.response) {
         return m.reply('Maaf, saat ini AI sedang tidak bisa merespon.')
