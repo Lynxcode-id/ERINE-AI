@@ -14,6 +14,7 @@ import os from 'node:os'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import crypto from 'node:crypto'
+import { getStickerWm } from '../../lib/stickerMeta.js'
 
 const require = createRequire(import.meta.url)
 const webpmuxModule = require('node-webpmux')
@@ -26,8 +27,6 @@ const ASSET_DIR = path.join(process.cwd(), 'data', 'brat-assets')
 const FONT_PATH = path.join(ASSET_DIR, 'ARIALN.ttf')
 const EMOJI_JSON_PATH = path.join(ASSET_DIR, 'emoji-apple.json')
 
-const PACK_NAME = 'ERINE-AI • ELYRA'
-const PUBLISHER_NAME = 'BOT BY INF PROJECT'
 const WATERMARK = '.'
 
 const CANVAS_SIZE = 1000
@@ -300,11 +299,9 @@ async function createMp4(framePaths, outputPath, tempDir) {
     manifestLines.push(`file '${quoteConcatPath(framePaths[i])}'`)
     manifestLines.push(`duration ${i === framePaths.length - 1 ? HOLD_DURATION : FRAME_DURATION}`)
   }
-  // Required by FFmpeg concat demuxer so the final frame gets its requested duration.
+  
   manifestLines.push(`file '${quoteConcatPath(framePaths[framePaths.length - 1])}'`)
   writeFileSync(manifestPath, manifestLines.join('\n') + '\n')
-
-  // Keep the intermediary crisp. yuv444p avoids 4:2:0 chroma softness on high-contrast text.
   await execFileAsync('ffmpeg', [
     '-y', '-hide_banner', '-loglevel', 'error',
     '-f', 'concat', '-safe', '0', '-i', manifestPath,
@@ -367,10 +364,11 @@ async function encodeWebpFromMp4(mp4Path, outputPath) {
 }
 
 function makeStickerExif() {
+  const wm = getStickerWm()
   const json = {
     'sticker-pack-id': `erine-ai-elyra-${crypto.randomBytes(8).toString('hex')}`,
-    'sticker-pack-name': PACK_NAME,
-    'sticker-pack-publisher': PUBLISHER_NAME,
+    'sticker-pack-name': wm.packName,
+    'sticker-pack-publisher': wm.author,
     emojis: ['🎨', '✨']
   }
   const header = Buffer.from([

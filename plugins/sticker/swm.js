@@ -1,3 +1,4 @@
+
 import { FIRST_IS, buildWatermarkedSticker } from '../../lib/stickerwm.js'
 
 const FOOTER = 'with love, elyra !!'

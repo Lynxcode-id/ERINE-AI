@@ -2,6 +2,7 @@ import { createCanvas, loadImage, GlobalFonts } from '@napi-rs/canvas'
 import { create as createSticker } from '@itsliaaa/starseal'
 import { existsSync, readFileSync, mkdirSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
+import { getStickerWm } from '../../lib/stickerMeta.js'
 
 const FONT_URL = 'https://raw.githubusercontent.com/Ditzzx-vibecoder/Assets/main/Font/ARIALN.ttf'
 const EMOJI_JSON_URL = 'https://media.githubusercontent.com/media/Ditzzx-vibecoder/entahlah/main/emoji-apple.json'
@@ -9,8 +10,6 @@ const ASSET_DIR = path.join(process.cwd(), 'data', 'brat-assets')
 const FONT_PATH = path.join(ASSET_DIR, 'ARIALN.ttf')
 const EMOJI_JSON_PATH = path.join(ASSET_DIR, 'emoji-apple.json')
 
-const PACK_NAME = 'ERINE-AI • ELYRA'
-const PUBLISHER_NAME = 'BOT BY INF PROJECT'
 const WATERMARK = '.'
 const MAX_TEXT_LENGTH = 350
 const CANVAS_SIZE = 1000
@@ -272,7 +271,7 @@ async function generateBratPng({ text, theme = 'white', blur = 0 }) {
     y += fontSize + lineGap
   }
   ctx.restore()
-  
+
   const watermarkSize = 18
   ctx.save()
   ctx.globalAlpha = 0.62
@@ -323,9 +322,10 @@ export default {
 
     try {
       const png = await generateBratPng(input)
+      const wm = getStickerWm()
       const sticker = await createSticker(png)
-        .packName(PACK_NAME)
-        .publisherName(PUBLISHER_NAME)
+        .packName(wm.packName)
+        .publisherName(wm.author)
         .emojis(['🎨', '✨'])
         .options({
           width: 512,
