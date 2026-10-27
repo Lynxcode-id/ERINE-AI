@@ -1,8 +1,8 @@
 {
-  "name": "💐 Erine-AI • Elyra Version",
-  "version": "1.0.0 Beta",
+  "name": "Erine-AI • Elyra",
+  "version": "1.7.1",
   "type": "module",
-  "description": "WhatsApp bot that uses the zapo-js library, which was redeveloped by lynx decode along with the inf project and general district teams.",
+  "description": "WhatsApp bot that uses the zapo-js library, which was redeveloped by lynx decode along with the inf project and general district and elyra labs teams.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -13,22 +13,26 @@
     "@audio/decode": "^4.1.1",
     "@itsliaaa/starforge": "^0.0.0-alpha.9",
     "@itsliaaa/starseal": "^0.5.1",
-    "@napi-rs/canvas": "^1.0.10",
+    "@napi-rs/canvas": "^1.0.13",
     "@zapo-js/media-utils": "latest",
     "@zapo-js/native": "latest",
     "@zapo-js/store-sqlite": "latest",
+    "audio-decode": "^3.12.0",
     "axios": "latest",
     "better-sqlite3": "latest",
     "chalk": "latest",
-    "cheerio": "latest",
+    "cheerio": "^1.2.0",
     "fake-ff": "^1.0.2",
+    "ffmpeg": "^0.0.4",
     "file-type": "latest",
     "fluent-ffmpeg": "latest",
     "magic-bytes.js": "^1.13.1",
+    "node-fetch": "^3.3.2",
     "node-webpmux": "^3.2.1",
     "qr": "^0.7.2",
     "qrcode-terminal": "latest",
     "sharp": "^0.35.5",
+    "wa-sticker-formatter": "^4.4.4",
     "yt-search": "^2.13.1",
     "zapo-js": "^1.10.0"
   },
@@ -36,5 +40,10 @@
     "zapo-js",
     "sharp",
     "@zapo-js/native"
-  ]
+  ],
+  "allowScripts": {
+    "zapo-js@1.10.0": true,
+    "better-sqlite3@13.0.3": true,
+    "sharp@0.30.7": true
+  }
 }
