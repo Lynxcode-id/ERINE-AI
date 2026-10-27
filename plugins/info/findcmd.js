@@ -1,3 +1,4 @@
+
 const MAX_RESULTS = 15
 
 function uniquePlugins(plugins) {

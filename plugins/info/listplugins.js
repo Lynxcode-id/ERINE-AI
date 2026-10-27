@@ -1,3 +1,4 @@
+
 import path from 'path'
 
 function uniquePlugins(plugins) {
@@ -46,7 +47,6 @@ contoh penggunaan:
     }
     const folders = [...groups.keys()].sort()
 
-    // detail satu folder
     if (filter) {
       const list = groups.get(filter)
       if (!list) {
@@ -67,7 +67,6 @@ contoh penggunaan:
       return m.reply(lines.join('\n').trim())
     }
 
-    // ringkasan semua folder
     const lines = [`📂 *DAFTAR PLUGIN*`, `› Total: ${all.length} plugin di ${folders.length} folder`, '']
     for (const folder of folders) {
       const list = groups.get(folder)
