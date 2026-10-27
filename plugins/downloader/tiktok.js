@@ -1,7 +1,7 @@
 import axios from 'axios'
 import sharp from 'sharp'
 
-const API_URL = 'https://lynxapis.my.id/api/downloader/tiktok-v4'
+const API_URL = `${global.lynxapis}/api/downloader/tiktok-v4`
 const API_TIMEOUT = 60000
 const MEDIA_TIMEOUT = 120000
 const MAX_VIDEO_SIZE = 80 * 1024 * 1024

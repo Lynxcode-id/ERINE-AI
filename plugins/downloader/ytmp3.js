@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'https://lynxapis.my.id/api/downloader/ytmp3-v2'
+const API_URL = `${global.lynxapis}/api/downloader/ytmp3-v2`
 const DEFAULT_BITRATE = '128k'
 const MAX_FILE_BYTES = 80 * 1024 * 1024
 const YT_REGEX = /^(https?:\/\/)?((www|m|music)\.)?(youtube\.com|youtu\.be)\/\S+/i
@@ -74,7 +74,6 @@ contoh penggunaan:
       `› Ukuran  : ${formatSize(data.filesize_bytes)}`,
       `› Views   : ${Number(data.stats?.views || 0).toLocaleString('id-ID')}`
     ].join('\n')
-
     try {
       const thumb = await axios.get(data.thumbnail, { responseType: 'arraybuffer', timeout: 30000 })
       await m.reply({ type: 'image', media: Buffer.from(thumb.data), caption })

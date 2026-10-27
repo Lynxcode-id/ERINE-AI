@@ -48,7 +48,7 @@ export default {
     if (!url.match(/soundcloud\.com/i)) return m.reply('URL tidak valid. Pastikan itu adalah link SoundCloud.')
 
     try {
-      const { data: res } = await axios.get(`https://lynxapis.my.id/api/downloader/soundcloud?url=${encodeURIComponent(url)}`)
+      const { data: res } = await axios.get(`${global.lynxapis}/api/downloader/soundcloud?url=${encodeURIComponent(url)}`)
       const track = res?.data?.data || res?.data
 
       if (!res?.status || !track || !track.title) {
