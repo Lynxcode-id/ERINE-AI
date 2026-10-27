@@ -1,0 +1,43 @@
+import { requestJadibot, normalizeNumber, MAX_JADIBOT, JB_FOOTER } from '../../lib/jadibot.js'
+
+export default {
+  command: 'jadibot',
+  category: 'jadibot',
+  description: `> Jadi bot sementara lewat nomor WhatsApp-mu sendiri (pairing code). Request diproses lewat *antrian*: satu per satu, dengan jeda acak antar request supaya aman dari spam.
+
+*Keterangan Format:*
+\`[nomor]\` = nomor WA yang mau dijadikan bot (kosong = nomor kamu sendiri).
+
+contoh penggunaan:
+> \`.jadibot\`
+> \`.jadibot 628123456789\`
+
+*Catatan:*
+> hanya bisa lewat chat pribadi.
+> jadibot hanya bisa memakai fitur gratis (tanpa fitur owner, premium, VIP).
+> maksimal ${MAX_JADIBOT} jadibot.`,
+  help: '[nomor]',
+  noChild: true,
+  premium: false,
+
+  async execute(m, { sock, args }) {
+    const fromSender = String(m.sender).endsWith('@s.whatsapp.net') ? m.sender : null
+    const number = normalizeNumber(args[0] || fromSender)
+    if (!number) {
+      return m.reply(`Nomor tidak terbaca.\nFormat: ${m.prefix}${m.command} 628xxxxxxxxxx\n\n${JB_FOOTER}`)
+    }
+
+    const res = requestJadibot({
+      number,
+      requesterJid: m.sender,
+      requesterName: m.pushName,
+      chat: m.chat,
+      sock,
+      isOwner: m.isOwner,
+      reply: (text) => m.reply(text)
+    })
+
+    if (!res.ok) return m.reply(`⚠️ ${res.text}`)
+    if (res.position === 0) return m.reply(`✅ Request diterima untuk nomor ${number}. Menyiapkan kode pairing...`)
+  }
+}
