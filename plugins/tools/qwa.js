@@ -1,9 +1,10 @@
+
 import { getRawMessageById } from '../../db/rawMessage.js'
 import { getContactByJid } from '../../db/contacts.js'
 import { normalizeJid } from '../../handler.js'
 import { reviveBase64Fields } from '../../lib/utils.js'
 
-const API_URL = 'https://qwa.eeq.my.id/api/generate'
+const API_URL = `${global.qwa}/api/generate`
 
 function getMessageContent(message) {
   if (!message || typeof message !== 'object') return null

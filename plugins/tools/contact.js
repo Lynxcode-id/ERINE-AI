@@ -1,3 +1,4 @@
+
 import { buildContact, normalizeJid } from '../../handler.js'
 
 export default {

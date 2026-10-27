@@ -1,6 +1,7 @@
+
 import { config } from '../../settings.js'
 
-const RAY_API = 'https://ray.tinte.dev/api/v1/screenshot'
+const RAY_API = `${global.raytinte}/api/v1/screenshot`
 const DEFAULT_TITLE = 'code.js'
 const TIMEOUT_MS = 60000
 

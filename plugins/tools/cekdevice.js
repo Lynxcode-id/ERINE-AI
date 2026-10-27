@@ -1,3 +1,4 @@
+
 const DEVICE_BY_PREFIX = [
   ['3EB0', 'WhatsApp Web'],
   ['AC', 'Android'],

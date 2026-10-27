@@ -1,3 +1,4 @@
+
 import sharp from 'sharp'
 import { extractStillFrame } from '../../lib/exif.js'
 
