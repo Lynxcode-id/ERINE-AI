@@ -3,26 +3,68 @@ import { fileURLToPath } from 'url'
 
 const __filename = fileURLToPath(import.meta.url)
 
+global.theresav = 'https://api.theresav.eu'
+global.lynxapis = 'https://lynxapis.my.id'
+global.xrina = 'https://apiii-xrina.my.id'
+global.nexray = 'https://api.nexray.eu.cc'
+global.nexrayweb = 'https://api.nexray.web.id'
+global.jerexd = 'https://api.jerexd.my.id'
+global.snowping = 'https://api.snowping.cfd'
+global.cmnty = 'https://api.cmnty.eu.cc'
+global.faa = 'https://api-faa.my.id'
+global.izuka = 'https://my.izuka-api.xyz'
+global.vamx = 'https://vamxapi.my.id'
+global.jagoan = 'https://api.jagoanproject.com'
+global.azbry = 'https://api.azbry.com'
+global.bintang = 'https://bintangapi.my.id'
+global.starlabs = 'https://starlabs.biz.id'
+global.siputzx = 'https://brat.siputzx.my.id'
+global.wolep = 'https://wolep.dev'
+global.qwa = 'https://qwa.eeq.my.id'
+global.termai = 'https://c.termai.cc'
+global.dhanypedia = 'https://bmkg-api.dhanypedia.com'
+global.bmkg = 'https://api.bmkg.go.id'
+global.raytinte = 'https://ray.tinte.dev'
+global.ocrspace = 'https://api.ocr.space'
+
+// CARA AMBIL APIKEY - SALIN LINK DI ATAS YANG REST APINYA MAKE APIKEY
+// LOGIN PAKE GOOGLE MASING MASING TERUS AMBIL PASANG APIKEY DI BAWAH
+// TANPA APIKEY FITUR FITUR BOT INI TIDAK AKAN BERFUNGSI SEBAGAIMANA MESTINYA
+// MODAL DONG UDH GEDE HOBYNYA MASIH MAKE APIKEY ORG 😂
+// MAU JADI PENYUMBANG APIKEY ? INFO AJA KE SALURAN INF 
+
+global.apikey = Object.create(null)
+global.apikey.theresav = process.env.APIKEY_THERESAV || '-' // apikeymu
+global.apikey.jerexd   = process.env.APIKEY_JEREXD   || '-' // apikeymu
+global.apikey.vamx     = process.env.APIKEY_VAMX     || '-' // apikeymu
+global.apikey.cmnty    = process.env.APIKEY_CMNTY    || '-' // apikeymu
+global.apikey.jagoan   = process.env.APIKEY_JAGOAN   || '-' // apikeymu
+global.apikey.ocrspace = process.env.APIKEY_OCRSPACE || 'helloworld' // apikeymu
+global.apikey.termai   = process.env.TERMAI_KEY      || 'AIzaBj7z2z3xBjsk' // apikeymu
+global.apikey.catbox   = process.env.CATBOX_USERHASH || '-' // userhashmi
+
 export const settings = {
-  usePairingCode: true, // Bawaan true kalo false nanti yang muncul QR
-  customPairing: 'ERNSTARS', // Biarin aja, Ga usah diganti kalo ga mau error
-  noprefix: false, // Set true kalo mau bawaan no prefix gtupun sebaliknya
-  self: false, // Bawaan false
-  eventMessage: false, // Bawaan false 
-  eventAll: false, // Bawaan false
-  ownerName: 'Lynx decode', // Ganti Nama owner
-  owner: '6288258041396', // Ganti Nomor owner
-  botName: 'Erine Stars • Erlynn', // Nama Bot
-  botNumber: '6281362133135', // Nomor Bot
-  jidGroup: '120363429790251223@g.us', // Grup khusus backup sc kau dan bot kau aja yah cukimay jangan gc yang rame biar sclu + datanya aman
+  usePairingCode: true,
+  customPairing: 'ERNSTARS', // ga usah diapa apain ntr error mampus
+  noprefix: false, // bawaan false
+  self: false, // bawaan false
+  eventMessage: false, // bawaan false
+  eventAll: false, // bawaan false
+  ownerName: 'Lynx decode', // nama owner
+  owner: '628', // nomer owner
+  botName: 'Elyra Multi Decive', // namabot
+  botNumber: '628', // nomor botnya
+  stickerPack: 'elyra multi device', // wm sticker
+  stickerAuthor: 'whatsapp bot fasted by inf project x lynx decode build with zapojs library.. Whatsapp bot 628', // wm sticker
+  jidGroup: '---@g.us', // idgrup utamamu tujuannya info error & backup dikirim digrup ini
 
-  prefixes: ["."], // Prefix bawaan bot
+  prefixes: ["!","."], // prefix botnya
 
-// Quote botnya ganti aja kalau mau, Masih ada yang ga berfungsi..
+// Quote botnya ganti aja kalo mau
   pesan: {
-    wait: 'Sedang diproses, mohon tunggu sebentar ya kak... ⏳',
-    error: 'Terjadi kesalahan 😥 Coba lagi nanti ya.',
-    done: 'Berhasil dilakukan ✓',
+    wait: '🌱 Request sedang diproses, Tunggu sampai proses ini selesai!',
+    error: '🍂 Terjadi kesalahan, coba lagi nanti.',
+    done: '💐 Task selesai..',
     ownerOnly: 'Fitur ini khusus owner bot!',
     groupOnly: 'Fitur ini hanya bisa digunakan di grup!',
     privateOnly: 'Fitur ini hanya bisa digunakan di private chat!',
