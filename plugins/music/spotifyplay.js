@@ -14,7 +14,7 @@ export default {
     if (!query) return m.reply('Masukkan judul lagu yang ingin dicari.\nContoh: `.splay terpenjara sepi`')
 
     try {
-      const { data: res } = await axios.get(`https://lynxapis.my.id/api/music/spotify-play?query=${encodeURIComponent(query)}`)
+      const { data: res } = await axios.get(`${global.lynxapis}/api/music/spotify-play?query=${encodeURIComponent(query)}`)
       const track = res?.data
 
       if (!res?.status || !track || !track.download_url) {
