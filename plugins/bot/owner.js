@@ -1,4 +1,3 @@
-// Ga di obfus biar klean bisa atur owner, kan aneh kalo onwernya masih sama aja yekan
 
 import { config } from '../../settings.js'
 import { useStarforge } from '../../lib/function.js'
