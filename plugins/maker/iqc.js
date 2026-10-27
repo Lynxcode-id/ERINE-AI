@@ -47,7 +47,7 @@ export default {
       }
 
       const res = await axios.post(
-        'https://brat.siputzx.my.id/v2/iphone-quoted',
+        `${global.siputzx}/v2/iphone-quoted`,
         payload,
         {
           headers: { 'Content-Type': 'application/json' },

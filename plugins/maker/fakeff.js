@@ -1,3 +1,4 @@
+
 import fs from 'fs/promises'
 import os from 'os'
 import path from 'path'
@@ -100,6 +101,7 @@ contoh penggunaan:
       const file = path.isAbsolute(res.result) ? res.result : path.resolve(process.cwd(), res.result)
       const png = await fs.readFile(file).catch(() => fs.readFile(path.join(outDir, path.basename(res.result))))
       if (!png.length) throw new Error('File gambar kosong.')
+
       await fs.rm(file, { force: true }).catch(() => {})
 
       return await m.reply({

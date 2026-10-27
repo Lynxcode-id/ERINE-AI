@@ -31,7 +31,7 @@ export default {
     }
 
     try {
-      const url = `https://lynxapis.my.id/api/maker/fakebank-jago?nama=${encodeURIComponent(nama)}&saldo=${encodeURIComponent(saldo)}`
+      const url = `${global.lynxapis}/api/maker/fakebank-jago?nama=${encodeURIComponent(nama)}&saldo=${encodeURIComponent(saldo)}`
       const { data } = await axios.get(url, { responseType: 'arraybuffer' })
 
       const media = Buffer.from(data)
